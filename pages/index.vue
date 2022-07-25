@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Color mode: {{ $colorMode.value }}</h1>
+    <ColorScheme placeholder="..." tag="span">
+      <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
+      <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span><br>
+    </ColorScheme>
     <select v-model="$colorMode.preference">
       <option value="system">System</option>
       <option value="light">Light</option>
@@ -9,10 +12,12 @@
     </select>
   </div>
 </template>
+
 <script setup>
   const colorMode = useColorMode()
   console.log(colorMode.preference)
 </script>
+
 <style>
 body {
   background-color: #fff;
