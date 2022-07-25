@@ -1,5 +1,14 @@
 <template>
   <div>
+     <Title>Demo of @nuxtjs/color-mode</Title>
+    <ColorModePicker />
+    <p>
+      Go to
+      <NuxtLink to="/light">
+        light page
+      </NuxtLink>
+    </p>
+    <br>
     <ColorScheme placeholder="..." tag="span">
       <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
       <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span><br>
