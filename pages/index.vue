@@ -1,10 +1,6 @@
 <template>
   <div class="container">
-    <NuxtLayout name="custom">
-      The rest of the page
-    </NuxtLayout>
     <ColorModePicker />
-    <p>Go to <NuxtLink to="/light">light page</NuxtLink></p>
     <br>
     <ColorScheme placeholder="..." tag="span">
       <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
@@ -27,7 +23,7 @@
       htmlAttrs: {
           lang: 'de'
       },
-      title: '🌴 Maui - Blog2',
+      title: '🌴 Home - Maui',
       meta: [
           { name: 'description', content: `Blog2` },
           { name: 'og:title', content: `Blog2` }

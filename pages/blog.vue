@@ -6,15 +6,11 @@
       Forcing a color mode is great to implement dark mode to a website incrementally, <a href="https://color-mode.nuxtjs.org/#force-a-color-mode">learn more</a> about it.
     </p>
     <p>
-      <NuxtLink to="/">
-        Home
-      </NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink>
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  colorMode: 'light'
-})
+definePageMeta({ layout: 'blog-overview', colorMode: 'light' })
 </script>

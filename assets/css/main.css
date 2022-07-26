@@ -12,7 +12,7 @@
   --color-primary: #41b38a;
   --color-secondary: #fdf9f3;
   --bg: #171719;
-  --bg-secondary: #071521;
+  --bg-secondary: #000;
   --border-color: #0d2538;
 }
 
@@ -30,7 +30,7 @@
   --color-primary: #B5E2FA;
   --color-secondary: #ff0000;
   --bg: #EDDEA4;
-  --bg-secondary: #F9F7F3;
+  --bg-secondary: #F7A072;
   --border-color: #F7A072;
 }
 
@@ -39,7 +39,7 @@
   --color-primary: #B5E2FA;
   --color-secondary: #ff0000;
   --bg: #e6007e;
-  --bg-secondary: #F9F7F3;
+  --bg-secondary: #000;
   --border-color: #F7A072;
 }
 
@@ -53,4 +53,8 @@ body {
 
 a {
   color: var(--color-primary);
+}
+
+footer {
+  background-color: var(--bg-secondary)
 }
