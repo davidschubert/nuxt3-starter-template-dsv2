@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <NuxtLayout name="custom">
+      The rest of the page
+    </NuxtLayout>
     <ColorModePicker />
     <p>Go to <NuxtLink to="/light">light page</NuxtLink></p>
     <br>
