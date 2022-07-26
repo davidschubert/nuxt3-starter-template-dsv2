@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <Title>Maui</Title>
     <ColorModePicker />
     <p>Go to <NuxtLink to="/light">light page</NuxtLink></p>
     <br>
@@ -25,7 +24,7 @@
       htmlAttrs: {
           lang: 'de'
       },
-      title: 'ROAST - Blog2',
+      title: '🌴 Maui - Blog2',
       meta: [
           { name: 'description', content: `Blog2` },
           { name: 'og:title', content: `Blog2` }
