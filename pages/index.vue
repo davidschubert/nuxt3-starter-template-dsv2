@@ -21,6 +21,20 @@
 </template>
 
 <script setup>
+  useHead({
+      htmlAttrs: {
+          lang: 'de'
+      },
+      title: 'ROAST - Blog2',
+      meta: [
+          { name: 'description', content: `Blog2` },
+          { name: 'og:title', content: `Blog2` }
+      ],
+      link: [
+          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+  })
+
   const colorMode = useColorMode()
   console.log(colorMode.preference)
 </script>
@@ -31,15 +45,18 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 ul li {
   display: inline-block;
   padding: 5px;
 }
+
 p {
   margin: 0;
   padding-top: 5px;
   padding-bottom: 20px;
 }
+
 .container {
   text-align: center;
   padding: 50px;
