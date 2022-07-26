@@ -1,13 +1,8 @@
 <template>
-  <div>
-     <Title>Demo of @nuxtjs/color-mode</Title>
+  <div class="container">
+    <Title>Maui</Title>
     <ColorModePicker />
-    <p>
-      Go to
-      <NuxtLink to="/light">
-        light page
-      </NuxtLink>
-    </p>
+    <p>Go to <NuxtLink to="/light">light page</NuxtLink></p>
     <br>
     <ColorScheme placeholder="..." tag="span">
       <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
@@ -18,7 +13,10 @@
       <option value="light">Light</option>
       <option value="dark">Dark</option>
       <option value="sepia">Sepia</option>
+      <option value="maui">Maui</option>
+      <option value="puk">PUK</option>
     </select>
+    <ColorModeChanger />
   </div>
 </template>
 
@@ -27,17 +25,23 @@
   console.log(colorMode.preference)
 </script>
 
-<style>
-body {
-  background-color: #fff;
-  color: rgba(0,0,0,0.8);
+<style scoped>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
+ul li {
+  display: inline-block;
+  padding: 5px;
 }
-.sepia-mode body {
-  background-color: #f1e7d0;
-  color: #433422;
+p {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.container {
+  text-align: center;
+  padding: 50px;
 }
 </style>

@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li
-        v-for="color of ['system', 'light', 'dark', 'sepia']"
+        v-for="color of ['system', 'light', 'dark', 'sepia', 'maui', 'puk']"
         :key="color"
         :class="{
           preferred: !$colorMode.unknown && color === $colorMode.preference,
