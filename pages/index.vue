@@ -1,6 +1,6 @@
 <template>
   <HomeHello />
-  <section class="slide">
+  <section class="slide bg-green">
     <div class="max-w-screen-xl">
       <ColormodePicker />
       <ColorScheme placeholder="..." tag="span">
