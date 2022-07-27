@@ -1,11 +1,15 @@
 <template>
   <HomeHello />
-  <ColormodePicker />
-  <ColorScheme placeholder="..." tag="span">
-    <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
-    <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
-  </ColorScheme>
-  <ColormodeChanger />
+  <section class="slide">
+    <div class="max-w-screen-xl">
+      <ColormodePicker />
+      <ColorScheme placeholder="..." tag="span">
+        <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
+        <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
+      </ColorScheme>
+      <ColormodeChanger />
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -43,10 +47,5 @@ p {
   margin: 0;
   padding-top: 5px;
   padding-bottom: 20px;
-}
-
-.container {
-  text-align: center;
-  padding: 50px;
 }
 </style>

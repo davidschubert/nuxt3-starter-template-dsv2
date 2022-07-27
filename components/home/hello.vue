@@ -13,10 +13,3 @@
         </div>
     </section>
 </template>
-
-<style scoped>
-.slide {
-  @apply overflow-hidden my-0 mx-auto px-40 py-36 flex flex-col items-center justify-center;
-  min-height: 520px;
-}
-</style>
