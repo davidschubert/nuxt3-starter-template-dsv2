@@ -36,6 +36,9 @@ module.exports ={
         '8xl': '96rem',
         '9xl': '128rem',
       },
+      lineHeight: {
+        '11': '4rem', 
+      },
       borderRadius: {
         '4xl': '2rem',
         normal: '2px',

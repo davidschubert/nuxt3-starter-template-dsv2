@@ -1,7 +1,9 @@
 <template>
   <div>
-    <TheHeader />
-    <slot />
-    <TheFooter />
+    <BaseHeader />
+    <main class="my-0 mx-auto">
+      <slot />
+    </main>
+    <BaseFooter />
   </div>
 </template>

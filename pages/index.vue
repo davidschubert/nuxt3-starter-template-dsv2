@@ -1,21 +1,11 @@
 <template>
-  <div class="container">
-    <ColorModePicker />
-    <br>
-    <ColorScheme placeholder="..." tag="span">
-      <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
-      <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span><br>
-    </ColorScheme>
-    <select v-model="$colorMode.preference">
-      <option value="system">System</option>
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-      <option value="sepia">Sepia</option>
-      <option value="maui">Maui</option>
-      <option value="puk">PUK</option>
-    </select>
-    <ColorModeChanger />
-  </div>
+  <HomeHello />
+  <ColormodePicker />
+  <ColorScheme placeholder="..." tag="span">
+    <h1>Color mode: <b>{{ $colorMode.preference }}</b></h1>
+    <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
+  </ColorScheme>
+  <ColormodeChanger />
 </template>
 
 <script setup>
@@ -33,8 +23,8 @@
       ]
   })
 
-  const colorMode = useColorMode()
-  console.log(colorMode.preference)
+  /*const colorMode = useColorMode()
+  console.log(colorMode.preference)*/
 </script>
 
 <style scoped>

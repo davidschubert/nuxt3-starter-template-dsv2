@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="p-10 my-10 border">
     <ul>
       <li
         v-for="color of ['system', 'light', 'dark', 'sepia', 'maui', 'puk']"
