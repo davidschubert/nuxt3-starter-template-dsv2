@@ -31,7 +31,7 @@ const { width, height } = useWindowSize()
                 <li v-else>Base (Mobile)</li>
             </ul>
         </header>
-        <div class="relative overflow-hidden items-center h-140 min-h-full text-gray-light bg-blue sm:bg-purple md:bg-pink lg:bg-orange xl:bg-green 2xl:bg-yellow">
+        <div class="relative overflow-hidden items-center h-150 min-h-full text-gray-light bg-blue sm:bg-purple md:bg-pink lg:bg-orange xl:bg-green 2xl:bg-gray-dark">
             <div class="flex justify-center items-center h-full">
                 <div class="text-center text-white px-6 md:px-12">
                     <h1 class="text-8xl font-bold m-0">Ghost</h1>
