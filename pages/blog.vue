@@ -9,6 +9,7 @@
       <NuxtLink to="/">Home</NuxtLink>
     </p>
   </div>
+  
 </template>
 
 <script setup lang="ts">

@@ -18,7 +18,7 @@
 <script>
 export default {
   created () {
-    console.log('layout created')
+    console.log('blogOverview layout created')
   }
 }
 </script>

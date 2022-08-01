@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~/assets/fonts/neue-montreal/NeueMontreal-Regular.ttf') format('truetype'),
+        url('~/assets/fonts/neue-montreal/NeueMontreal-Regular.woff2') format('woff2'),
+        url('~/assets/fonts/neue-montreal/NeueMontreal-Regular.woff') format('woff'),
+        url('~/assets/fonts/neue-montreal/NeueMontreal-Regular.otf') format('opentype');
+}

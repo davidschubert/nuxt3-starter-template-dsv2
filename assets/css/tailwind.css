@@ -1,3 +1,6 @@
+/* add fonts here */
+@import '~/assets/css/fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

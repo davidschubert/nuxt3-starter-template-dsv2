@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     modules: [
         '@vueuse/nuxt',
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/color-mode'
+        '@nuxtjs/color-mode',
     ],
     build: {
         postcss: {

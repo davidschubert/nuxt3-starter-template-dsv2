@@ -24,6 +24,11 @@ module.exports ={
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         helvetica: ['Helvetica', 'sans-serif'],
+        sans: ['Neue Montreal', 'sans-serif'],
+        serif: ['Neue Montreal', 'sans-serif'],
+        mono: ['Neue Montreal', 'sans-serif'],
+        display: ['Neue Montreal', 'sans-serif'],
+        body: ['Neue Montreal', 'sans-serif'],
       },
       fontSize: {
         smaller: '12px',
